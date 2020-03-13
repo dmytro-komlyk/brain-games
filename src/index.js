@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 
 const levelCount = 3;
 
-const letsPlay = (descriptionGame, question, game) => {
+const letsPlay = (descriptionGame, game) => {
 
     console.log(`Welcome to the Brain Games!`);
     const playerName = readlineSync.question(`May I have your name? `);
@@ -11,14 +11,14 @@ const letsPlay = (descriptionGame, question, game) => {
     console.log(descriptionGame);
 
     let start = 1;
-    let yourAnswer, questionGame;
-
+    
     while (start <= levelCount) {
-        questionGame = question();
-        console.log(`Question: ${questionGame}`);
-        yourAnswer = readlineSync.question(`Your answer: `)
-        const getAnswer = game(yourAnswer, questionGame)
-        if(getAnswer[0]) {
+        const getAnswer = game();
+        console.log(`Question: ${getAnswer[0]}`);
+        const yourAnswer = readlineSync.question(`Your answer: `);
+        let answer = Number(yourAnswer);
+        if(!isFinite(yourAnswer)) answer = yourAnswer.toLowerCase();
+        if(getAnswer[1] === answer) {
             console.log('Correct!')
             start += 1;
             continue;

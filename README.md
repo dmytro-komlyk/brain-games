@@ -12,3 +12,8 @@
 
 [![asciicast](https://asciinema.org/a/kY96icfktKpKFprV2aWLZHQCO.svg)](https://asciinema.org/a/kY96icfktKpKFprV2aWLZHQCO)
 
+## Игра: "НОД"
+
+Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+
+[![asciicast](https://asciinema.org/a/wq1eJoQw1cfv5yXLNxRLAHYTv.svg)](https://asciinema.org/a/wq1eJoQw1cfv5yXLNxRLAHYTv)

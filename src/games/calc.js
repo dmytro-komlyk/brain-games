@@ -1,33 +1,29 @@
 import letsPlay from '../index.js';
 
-    const randomNumber = () => Math.floor(Math.random() * 10);
+
+    const randomNumber = () => Math.floor(Math.random() * 100);
     const arrayOperators = ['+', '*', '-'];
     const randomOperator = () => arrayOperators[Math.floor(Math.random()*arrayOperators.length)];
-
     const descriptionGame = `What is the result of the expression?`;
-    const mathExpression = () => `${randomNumber()} ${randomOperator()} ${randomNumber()}`;
 
-    const calc = (answer, expression) => {
-        const arrExpression = expression.split(' ');
+    const calc = () => {
+        const num1 = randomNumber();
+        const num2 = randomNumber();
+        const operator = randomOperator()
+        const mathExpression = () => `${num1} ${operator} ${num2}`;
         let resultExpression;
-        switch(arrExpression[1]) {
+        switch(operator) {
             case '+':
-                resultExpression = Number(arrExpression[0]) + Number(arrExpression[2]);
+                resultExpression = num1 + num2;
               break;
             case '-':
-                resultExpression = Number(arrExpression[0]) - Number(arrExpression[2]);
+                resultExpression = num1 - num2;
               break;
             case '*':
-                resultExpression = Number(arrExpression[0]) * Number(arrExpression[2]);
+                resultExpression = num1 * num2;
               break;
           }
-        let result = [true, resultExpression];
-        if (Number(answer) === resultExpression) { 
-            return result;
-        } else {
-            result[0] = false
-            return result;
-        }
+        return [mathExpression(), resultExpression]
     };
 
-export default () => letsPlay(descriptionGame, mathExpression, calc);
+export default () => letsPlay(descriptionGame, calc);

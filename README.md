@@ -17,3 +17,9 @@
 Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
 
 [![asciicast](https://asciinema.org/a/wq1eJoQw1cfv5yXLNxRLAHYTv.svg)](https://asciinema.org/a/wq1eJoQw1cfv5yXLNxRLAHYTv)
+
+## Игра "Арифметическая прогрессия"
+
+Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
+
+[![asciicast](https://asciinema.org/a/5j5MxFHY5Qc4QSfQjbtdxafwt.svg)](https://asciinema.org/a/5j5MxFHY5Qc4QSfQjbtdxafwt)

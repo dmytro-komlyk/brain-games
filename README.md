@@ -38,5 +38,5 @@
 
 **Запуск игры:** $ brain-prime
 
-[![asciicast](https://asciinema.org/a/310350.svg)](https://asciinema.org/a/310350)
+[![asciicast](https://asciinema.org/a/310374.svg)](https://asciinema.org/a/310374)
 

@@ -1,7 +1,6 @@
 import letsPlay from '../index.js';
+import randomNumber from '../math-utilities.js';
 
-
-const randomNumber = () => Math.floor(Math.random() * 100);
 const descriptionGame = `What number is missing in the progression?`;
 
 const progression = () => {

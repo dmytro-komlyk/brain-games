@@ -1,7 +1,6 @@
 import letsPlay from '../index.js';
+import randomNumber from '../math-utilities.js';
 
-
-const randomNumber = () => Math.floor(Math.random() * 100);
 const descriptionGame = `Answer "yes" if the number is even, otherwise answer "no".`;
     
     const even = () => {

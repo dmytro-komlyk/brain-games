@@ -4,29 +4,39 @@
 
 Пользователю показывается случайное число. И ему нужно ответить **yes**, если число чётное, или **no** — если нечётное.
 
-[![asciicast](https://asciinema.org/a/bsg4GzOsM8lMrFR6xVatKxatr.svg)](https://asciinema.org/a/bsg4GzOsM8lMrFR6xVatKxatr)
+**Запуск игры:** $ brain-even
+
+[![asciicast](https://asciinema.org/a/310366.svg)](https://asciinema.org/a/310366)
 
 ## Игра: "Калькулятор"
 
 Пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
 
-[![asciicast](https://asciinema.org/a/kY96icfktKpKFprV2aWLZHQCO.svg)](https://asciinema.org/a/kY96icfktKpKFprV2aWLZHQCO)
+**Запуск игры:** $ brain-calc
+
+[![asciicast](https://asciinema.org/a/310361.svg)](https://asciinema.org/a/310361)
 
 ## Игра: "НОД"
 
 Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
 
-[![asciicast](https://asciinema.org/a/wq1eJoQw1cfv5yXLNxRLAHYTv.svg)](https://asciinema.org/a/wq1eJoQw1cfv5yXLNxRLAHYTv)
+**Запуск игры:** $ brain-gcd
+
+[![asciicast](https://asciinema.org/a/310359.svg)](https://asciinema.org/a/310359)
 
 ## Игра "Арифметическая прогрессия"
 
 Пользователю показывается ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
 
-[![asciicast](https://asciinema.org/a/5j5MxFHY5Qc4QSfQjbtdxafwt.svg)](https://asciinema.org/a/5j5MxFHY5Qc4QSfQjbtdxafwt)
+**Запуск игры:** $ brain-progression
+
+[![asciicast](https://asciinema.org/a/310369.svg)](https://asciinema.org/a/310369)
 
 ## Игра "Простое ли число?"
 
 Пользователю показывается случайное число. И ему нужно ответить **yes**, если число простое, или **no** — если нет.
 
-[![asciicast](https://asciinema.org/a/IJt2Gjd1PBRO94UFYg4KBuUnM.svg)](https://asciinema.org/a/IJt2Gjd1PBRO94UFYg4KBuUnM)
+**Запуск игры:** $ brain-prime
+
+[![asciicast](https://asciinema.org/a/310350.svg)](https://asciinema.org/a/310350)
 

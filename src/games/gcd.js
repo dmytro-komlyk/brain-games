@@ -1,6 +1,5 @@
 import letsPlay from '../index.js';
-
-    const randomNumber = () => Math.floor(Math.random() * 100);
+import randomNumber from '../math-utilities.js';
 
     const descriptionGame = `Find the greatest common divisor of given numbers.`;
     const calcGcd = (num1, num2) => (num2 === 0 ? num1 : calcGcd(num2, num1 % num2));

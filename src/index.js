@@ -11,17 +11,14 @@ const letsPlay = (descriptionGame, getGame) => {
     const getAnswer = getGame();
     console.log(`Question: ${getAnswer[0]}`);
     const yourAnswer = readlineSync.question('Your answer: ');
-    let answer = Number(yourAnswer);
-    if (!isFinite(yourAnswer)) answer = yourAnswer.toLowerCase();
-    if (getAnswer[1] === answer) {
-      console.log('Correct!');
-      if (start === levelCount) {
-        console.log(`Congratulations, ${playerName}`);
-      }
-      continue;
-    } else {
+    const answer = (Number(yourAnswer)) ? Number(yourAnswer) : yourAnswer.toLowerCase();
+    if (getAnswer[1] !== answer) {
       console.log(`"${yourAnswer}" is wrong answer ;(. Correct answer was "${getAnswer[1]}".\n Let's try again, ${playerName}!`);
       break;
+    }
+    console.log('Correct!');
+    if (start === levelCount) {
+      console.log(`Congratulations, ${playerName}`);
     }
   }
 };

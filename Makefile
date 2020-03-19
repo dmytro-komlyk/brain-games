@@ -2,7 +2,7 @@ install:
 		npm install
 
 start: 
-		node bin/brain-calc.js
+		node bin/brain-progression.js
 
 publish: 
 		npm publish --dry-run

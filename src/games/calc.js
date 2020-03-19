@@ -21,6 +21,8 @@ const calc = () => {
     case '*':
       resultExpression = num1 * num2;
       break;
+    default:
+      break;
   }
   return [mathExpression(), resultExpression];
 };

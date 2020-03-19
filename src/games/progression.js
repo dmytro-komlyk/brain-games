@@ -14,8 +14,8 @@ const progression = () => {
   const indexNumber = arrProgression.indexOf(randNumber);
   arrProgression[indexNumber] = '..';
   let expression = ' ';
-  for (const num of arrProgression) {
-    expression += `${num} `;
+  for (let i = 0; i < arrProgression.length; i += 1) {
+    expression += `${arrProgression[i]} `;
   }
   return [expression, randNumber];
 };

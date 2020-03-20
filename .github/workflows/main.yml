@@ -17,8 +17,5 @@ jobs:
         node-version: '13.x'
 
     - name: Run linter
-      uses: ./
-      with:
-        github_token: ${{ secrets.github_token }}
-        eslint: true
-      
+      run: |
+        make lint

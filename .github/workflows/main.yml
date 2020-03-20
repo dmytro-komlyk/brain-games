@@ -14,4 +14,4 @@ jobs:
         node-version: '13.x'
     - name: Run linter
       run: |
-        make lint
+        npx eslint .

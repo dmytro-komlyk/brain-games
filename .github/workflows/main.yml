@@ -27,6 +27,7 @@ jobs:
     - name: run linter
       run: |
         make lint
+      env:
         CI: true
 
    

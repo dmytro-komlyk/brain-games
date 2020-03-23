@@ -2,14 +2,11 @@ import letsPlay from '../index.js';
 import randomNumber from '../math-utilities.js';
 
 const descriptionGame = 'Answer "yes" if the number is even, otherwise answer "no".';
-const parityCheck = (num) => num % 2 === 0;
+const isEven = (num) => num % 2 === 0;
 
-const even = () => {
+const getEven = () => {
   const num = randomNumber();
-  if (parityCheck(num)) {
-    return [num, 'yes'];
-  }
-  return [num, 'no'];
+  return (isEven(num)) ? [num, 'yes'] : [num, 'no'];
 };
 
-export default () => letsPlay(descriptionGame, even);
+export default () => letsPlay(descriptionGame, getEven);

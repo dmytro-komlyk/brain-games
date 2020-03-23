@@ -3,21 +3,21 @@ import randomNumber from '../math-utilities.js';
 
 const descriptionGame = 'What number is missing in the progression?';
 
-const progression = () => {
+const getProgression = () => {
   const startProgression = randomNumber();
   const arrProgression = [startProgression];
   while (arrProgression.length < 10) {
     arrProgression.push(arrProgression[arrProgression.length - 1] + 2);
   }
   const getNumber = [Math.floor(Math.random() * arrProgression.length)];
-  const randNumber = arrProgression[getNumber];
-  const indexNumber = arrProgression.indexOf(randNumber);
+  const answerGame = arrProgression[getNumber];
+  const indexNumber = arrProgression.indexOf(answerGame);
   arrProgression[indexNumber] = '..';
-  let expression = ' ';
+  let questionGame = ' ';
   for (let i = 0; i < arrProgression.length; i += 1) {
-    expression += `${arrProgression[i]} `;
+    questionGame += `${arrProgression[i]} `;
   }
-  return [expression, randNumber];
+  return [questionGame, answerGame];
 };
 
-export default () => letsPlay(descriptionGame, progression);
+export default () => letsPlay(descriptionGame, getProgression);

@@ -1,12 +1,14 @@
 import letsPlay from '../index.js';
-import randomNumber from '../math-utilities.js';
+import getRandom from '../math-utilities.js';
 
-const descriptionGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (num) => num % 2 === 0;
 
-const getEven = () => {
-  const num = randomNumber();
-  return (isEven(num)) ? [num, 'yes'] : [num, 'no'];
+
+const gameData = () => {
+  const question = getRandom(1, 100);
+  const answer = (isEven(question)) ? 'yes' : 'no';
+  return [question, answer];
 };
 
-export default () => letsPlay(descriptionGame, getEven);
+export default () => letsPlay(description, gameData);

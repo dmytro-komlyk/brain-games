@@ -1,1 +1,4 @@
-export default () => Math.floor(Math.random() * 10) + 1;
+export default (min, max) => {
+  const rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+};

@@ -1,34 +1,29 @@
 import letsPlay from '../index.js';
-import randomNumber from '../math-utilities.js';
+import getRandom from '../math-utilities.js';
 
-const descriptionGame = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 const operators = ['+', '*', '-'];
-const randomOperator = () => operators[Math.floor(Math.random() * operators.length)];
 const mathOperation = (operator, num1, num2) => {
-  let result = 0;
   switch (operator) {
     case '+':
-      result = num1 + num2;
-      break;
+      return num1 + num2;
     case '-':
-      result = num1 - num2;
-      break;
+      return num1 - num2;
     case '*':
-      result = num1 * num2;
-      break;
+      return num1 * num2;
     default:
-      break;
+      throw new Error(`No ${operator} found!`);
   }
-  return result;
 };
 
-const getCalc = () => {
-  const num1 = randomNumber();
-  const num2 = randomNumber();
-  const operator = randomOperator();
-  const questionGame = `${num1} ${operator} ${num2}`;
-  const answerGame = mathOperation(operator, num1, num2);
-  return [questionGame, answerGame];
+const gameData = () => {
+  const num1 = getRandom(1, 10);
+  const num2 = getRandom(1, 10);
+  const idx = getRandom(0, 2);
+  const operator = operators[idx];
+  const question = `${num1} ${operator} ${num2}`;
+  const answer = mathOperation(operator, num1, num2);
+  return [question, answer];
 };
 
-export default () => letsPlay(descriptionGame, getCalc);
+export default () => letsPlay(description, gameData);

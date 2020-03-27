@@ -1,17 +1,18 @@
 import letsPlay from '../index.js';
-import randomNumber from '../math-utilities.js';
+import getRandom from '../math-utilities.js';
 
-const descriptionGame = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 const calcGcd = (num1, num2) => {
   if (num2 === 0) return num1;
   return calcGcd(num2, num1 % num2);
 };
 
-const getGcd = () => {
-  const num1 = randomNumber();
-  const num2 = randomNumber();
-  const questionGame = `${num1} ${num2}`;
-  return [questionGame, calcGcd(num1, num2)];
+const gameData = () => {
+  const num1 = getRandom(1, 20);
+  const num2 = getRandom(1, 20);
+  const question = `${num1} ${num2}`;
+  const answer = calcGcd(num1, num2);
+  return [question, answer];
 };
 
-export default () => letsPlay(descriptionGame, getGcd);
+export default () => letsPlay(description, gameData);

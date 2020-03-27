@@ -1,5 +1,5 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-![.github/workflows/main.yml](https://github.com/DmitriyK/frontend-project-lvl1/workflows/Node%20CI/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f3a623d45c4894b947b7/maintainability)](https://codeclimate.com/github/DmitriyK/frontend-project-lvl1/maintainability)
+[![Node CI](https://github.com/DmitriyK/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/DmitriyK/frontend-project-lvl1/actions)
 ## Игра: "Проверка на четность"
 
 Пользователю показывается случайное число. И ему нужно ответить **yes**, если число чётное, или **no** — если нечётное.

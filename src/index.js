@@ -11,7 +11,7 @@ const letsPlay = (descriptionGame, getGame) => {
     const getAnswer = getGame();
     console.log(`Question: ${getAnswer[0]}`);
     const yourAnswer = readlineSync.question('Your answer: ');
-    const answer = (Number(yourAnswer)) ? Number(yourAnswer) : yourAnswer.toLowerCase();
+    const answer = (Number(yourAnswer) + 1) ? Number(yourAnswer) : yourAnswer.toLowerCase();
     if (getAnswer[1] !== answer) {
       console.log(`"${yourAnswer}" is wrong answer ;(. Correct answer was "${getAnswer[1]}".\n Let's try again, ${playerName}!`);
       break;

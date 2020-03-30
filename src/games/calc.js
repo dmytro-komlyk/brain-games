@@ -3,7 +3,7 @@ import getRandom from '../math-utilities.js';
 
 const description = 'What is the result of the expression?';
 const operators = ['+', '*', '-'];
-const mathOperation = (operator, num1, num2) => {
+const getCalc = (operator, num1, num2) => {
   switch (operator) {
     case '+':
       return num1 + num2;
@@ -16,14 +16,14 @@ const mathOperation = (operator, num1, num2) => {
   }
 };
 
-const gameData = () => {
+const getGameData = () => {
   const num1 = getRandom(1, 10);
   const num2 = getRandom(1, 10);
-  const idx = getRandom(0, 2);
-  const operator = operators[idx];
+  const idxOperator = getRandom(0, operators.length - 1);
+  const operator = operators[idxOperator];
   const question = `${num1} ${operator} ${num2}`;
-  const answer = mathOperation(operator, num1, num2);
-  return [question, answer];
+  const answer = getCalc(operator, num1, num2);
+  return [question, String(answer)];
 };
 
-export default () => letsPlay(description, gameData);
+export default () => letsPlay(description, getGameData);

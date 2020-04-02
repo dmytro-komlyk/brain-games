@@ -19,8 +19,8 @@ const getCalc = (operator, num1, num2) => {
 const getGameData = () => {
   const num1 = getRandom(1, 10);
   const num2 = getRandom(1, 10);
-  const idxOperator = getRandom(0, operators.length - 1);
-  const operator = operators[idxOperator];
+  const index = getRandom(0, operators.length - 1);
+  const operator = operators[index];
   const question = `${num1} ${operator} ${num2}`;
   const answer = getCalc(operator, num1, num2);
   return [question, String(answer)];

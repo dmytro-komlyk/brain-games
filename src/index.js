@@ -12,11 +12,13 @@ const letsPlay = (description, getGameData) => {
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (answer !== playerAnswer) {
-      return console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${answer}".\n Let's try again, ${playerName}!`);
+      console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
+      console.log(`Let's try again, ${playerName}!`);
+      return;
     }
     console.log('Correct!');
   }
-  return console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}`);
 };
 
 export default letsPlay;

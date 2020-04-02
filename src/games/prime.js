@@ -13,6 +13,6 @@ const isPrime = (num) => {
 const getGameData = () => {
   const question = getRandom(1, 20);
   const answer = isPrime(question) ? 'yes' : 'no';
-  return [question, answer];
+  return [String(question), answer];
 };
 export default () => letsPlay(description, getGameData);

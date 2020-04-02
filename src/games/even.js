@@ -7,7 +7,7 @@ const isEven = (num) => num % 2 === 0;
 const getGameData = () => {
   const question = getRandom(1, 100);
   const answer = isEven(question) ? 'yes' : 'no';
-  return [question, answer];
+  return [String(question), answer];
 };
 
 export default () => letsPlay(description, getGameData);

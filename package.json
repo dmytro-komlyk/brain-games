@@ -1,5 +1,5 @@
 {
-  "name": "@dmitriyk/brain-games",
+  "name": "@dmytro-komlyk/brain-games",
   "version": "1.0.0",
   "description": "CLI games-app for brain training",
   "keywords": [
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DmitriyK/brain-games.git"
+    "url": "git+https://github.com/dmytro-komlyk/brain-games.git"
   },
   "author": "Dmytro Komlyk <dima.komlyk@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DmitriyK/brain-games/issues"
+    "url": "https://github.com/dmytro-komlyk/brain-games/issues"
   },
-  "homepage": "https://github.com/DmitriyK/brain-games#readme",
+  "homepage": "https://github.com/dmytro-komlyk/brain-games#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },

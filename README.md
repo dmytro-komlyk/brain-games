@@ -5,7 +5,7 @@
 <div align="center"> 
 
 [![Node CI](https://github.com/DmitriyK/brain-games/actions/workflows/main.yml/badge.svg)](https://github.com/DmitriyK/brain-games/actions/workflows/main.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/f3a623d45c4894b947b7/maintainability)](https://codeclimate.com/github/DmitriyK/frontend-project-lvl1/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2c1c31ae19545cfe11e5/maintainability)](https://codeclimate.com/github/dmytro-komlyk/brain-games/maintainability)
 
 </div>
 
@@ -29,7 +29,7 @@ This pet-project was created as part of the [Hexlet](https://ru.hexlet.io/progra
 ## Getting started
 
 ```sh
-git clone https://github.com/DmitriyK/brain-games.git
+git clone https://github.com/dmytro-komlyk/brain-games.git
 cd brain-games/
 make install
 make link
